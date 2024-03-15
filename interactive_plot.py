@@ -14,7 +14,7 @@ st.altair_chart(chart)
 st.header('Interactive Charts')
 
 st.subheader('Line Chart')
-df = pd.read_csv('C:\Machine Learning\data toolkit\Streamlit\csv\lang_data.csv')
+df = pd.read_csv('/csv/lang_data.csv')
 lang_list = df.columns.to_list()
 lang_choices = st.multiselect('Select Languages', lang_list)
 new_df = df[lang_choices]
@@ -25,7 +25,7 @@ st.area_chart(new_df)
 
 st.header('Data Visualalization with Plotly')
 st.subheader('Display the Data Frame')
-df = pd.read_csv(r"C:\Machine Learning\data toolkit\Streamlit\csv\tips.csv")
+df = pd.read_csv(r"/csv/tips.csv")
 st.dataframe(df)
 
 st.subheader('Pie Chart')
